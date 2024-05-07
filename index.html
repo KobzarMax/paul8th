@@ -125,8 +125,28 @@
         <div
           class="grid-cols-2 h-full large:hidden grid medium:hidden max-w-[689px] w-full gap-5"
         >
-          <div class="hero-process">
+          <div class="relative mb-20">
+            <img src="./asset/hero_process_bg.png" alt="hero_process_bg">
+            <img class="absolute bottom-0 left-1/2 -translate-x-1/2" src="./asset/hero_process_small.png" alt="hero_process_small">
+          </div>
+          <div id="hero-process-animation" class="relative mt-20">
+            <script>
+              var animation = bodymovin.loadAnimation({
 
+                container: document.getElementById('hero-process-animation'),
+
+                path: './animations/Animation_11.json',
+
+                renderer: 'svg',
+
+                loop: true,
+
+                autoplay: true,
+
+                name: "Demo Animation",
+
+              });
+            </script>
           </div>
         </div>
       </div>
@@ -234,133 +254,24 @@
           </div>
         </div>
       </div>
-      <div class="p-[72px] large:p-6">
-        <div class="swiper numbered-swiper py-3.5 relative">
-          <div class="swiper-wrapper">
-            <div
-              class="swiper-slide rounded-base flex items-center justify-start gap-9 large:flex-col"
-            >
-              <img src="./asset/nunbered_counter.png" alt="numbered counter" />
-              <div class="max-w-[454px] space-y-6">
-                <p class="font-bold text-base text-green">
-                  Funkmelder Kaltwasser
-                </p>
-                <h4
-                  class="text-[45px] leading-[54px] medium:text-2xl text-dark_text"
-                >
-                  Digitale Verbäuche <br />
-                  übermitteln
-                </h4>
-                <p>
-                  Akustische Leckageerkennung für Zählergrößen bis zu 10 m³/h.
-                  Zugelassen mit Dynamikbereich bis zu R1600
-                </p>
-                <a
-                  class="group flex items-center justify-start gap-1.5 cursor-pointer"
-                  href="#"
-                  >Mehr erfahren
-                  <img
-                    class="group-hover:translate-x-1 transition colored-to-black -rotate-90"
-                    src="./asset/right_arrow.png"
-                    alt="right_arrow"
-                /></a>
-              </div>
-            </div>
-            <div
-              class="swiper-slide rounded-base flex items-center justify-start gap-9 large:flex-col"
-            >
-              <img src="./asset/nunbered_counter.png" alt="numbered counter" />
-              <div class="max-w-[454px] space-y-6">
-                <p class="font-bold text-base text-green">
-                  Funkmelder Kaltwasser
-                </p>
-                <h4
-                  class="text-[45px] leading-[54px] medium:text-2xl text-dark_text"
-                >
-                  Digitale Verbäuche <br />
-                  übermitteln
-                </h4>
-                <p>
-                  Akustische Leckageerkennung für Zählergrößen bis zu 10 m³/h.
-                  Zugelassen mit Dynamikbereich bis zu R1600
-                </p>
-                <a
-                  class="group flex items-center justify-start gap-1.5 cursor-pointer"
-                  href="#"
-                  >Mehr erfahren
-                  <img
-                    class="group-hover:translate-x-1 transition colored-to-black -rotate-90"
-                    src="./asset/right_arrow.png"
-                    alt="right_arrow"
-                /></a>
-              </div>
-            </div>
-            <div
-              class="swiper-slide rounded-base flex items-center justify-start gap-9 large:flex-col"
-            >
-              <img src="./asset/nunbered_counter.png" alt="numbered counter" />
-              <div class="max-w-[454px] space-y-6">
-                <p class="font-bold text-base text-green">
-                  Funkmelder Kaltwasser
-                </p>
-                <h4
-                  class="text-[45px] leading-[54px] medium:text-2xl text-dark_text"
-                >
-                  Digitale Verbäuche <br />
-                  übermitteln
-                </h4>
-                <p>
-                  Akustische Leckageerkennung für Zählergrößen bis zu 10 m³/h.
-                  Zugelassen mit Dynamikbereich bis zu R1600
-                </p>
-                <a
-                  class="group flex items-center justify-start gap-1.5 cursor-pointer"
-                  href="#"
-                  >Mehr erfahren
-                  <img
-                    class="group-hover:translate-x-1 transition colored-to-black -rotate-90"
-                    src="./asset/right_arrow.png"
-                    alt="right_arrow"
-                /></a>
-              </div>
-            </div>
-            <div
-              class="swiper-slide rounded-base flex items-center justify-start gap-9 large:flex-col"
-            >
-              <img src="./asset/nunbered_counter.png" alt="numbered counter" />
-              <div class="max-w-[454px] space-y-6">
-                <p class="font-bold text-base text-green">
-                  Funkmelder Kaltwasser
-                </p>
-                <h4
-                  class="text-[45px] leading-[54px] medium:text-2xl text-dark_text"
-                >
-                  Digitale Verbäuche <br />
-                  übermitteln
-                </h4>
-                <p>
-                  Akustische Leckageerkennung für Zählergrößen bis zu 10 m³/h.
-                  Zugelassen mit Dynamikbereich bis zu R1600
-                </p>
-                <a
-                  class="group flex items-center justify-start gap-1.5 cursor-pointer"
-                  href="#"
-                  >Mehr erfahren
-                  <img
-                    class="group-hover:translate-x-1 transition colored-to-black -rotate-90"
-                    src="./asset/right_arrow.png"
-                    alt="right_arrow"
-                /></a>
-              </div>
-            </div>
+<!--      -->
+      <div class="px-[100px]">
+        <div class="bg-[#EFEEEC] p-2.5 rounded-[15px] grid grid-cols-3 gap-2.5">
+          <div class="grid-rows-6 gap-y-3.5 grid">
+            <div class="row-span-4"></div>
+            <div class="row-span-2"></div>
           </div>
-          <div class="swiper-controllers medium:hidden">
-            <div class="numbered-swiper-pagination swiper-pagination"></div>
+          <div class="grid-rows-6 gap-y-3.5 grid">
+            <div class="row-span-2"></div>
+            <div class="row-span-4"></div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="grid-rows-6 gap-y-3.5 grid">
+            <div class="row-span-4"></div>
+            <div class="row-span-2"></div>
+          </div>
         </div>
       </div>
+<!--      -->
       <div
         class="px-24 large:px-16 medium:px-10 small:px-5 mt-24 medium:my-8 mb-16 grid grid-cols-3 large:grid-cols-2 medium:grid-cols-1 gap-16"
       >
