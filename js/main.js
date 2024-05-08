@@ -126,6 +126,31 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  const s5 = new Swiper(".chart-swiper", {
+    // Optional parameters
+    // loop: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    mousewheel: true,
+    breakpoints: {
+      1024: {
+        mousewheel: false,
+      },
+    },
+    // If we need pagination
+    pagination: {
+      el: ".chart-swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        // Retrieve the data-slide-name attribute of the slide
+        const slideName = this.slides[index].getAttribute("data-slide-name");
+
+        // Return the bullet with the slide name
+        return '<span class="' + className + '">' + slideName + "</span>";
+      },
+    },
+  });
 });
 
 // let init = false;
@@ -293,22 +318,22 @@ function initFAQ() {
 
 initFAQ();
 
-const installFaq = document.querySelector('#installFaq');
+const installFaq = document.querySelector("#installFaq");
 
-const installFaqItems = installFaq.querySelectorAll('li');
+const installFaqItems = installFaq.querySelectorAll("li");
 
 installFaqItems.forEach((item, index) => {
-  const itemText = item.querySelector('p');
+  const itemText = item.querySelector("p");
   slideUp(itemText);
-  item.addEventListener('click', (e) => {
+  item.addEventListener("click", (e) => {
     installFaqItems.forEach((faqItem, faqIndex) => {
       if (faqIndex !== index) {
-        const faqItemText = faqItem.querySelector('p');
-        faqItem.classList.remove('active');
+        const faqItemText = faqItem.querySelector("p");
+        faqItem.classList.remove("active");
         slideUp(faqItemText);
       }
     });
-    item.classList.add('active');
+    item.classList.add("active");
     slideDown(itemText);
   });
-})
+});

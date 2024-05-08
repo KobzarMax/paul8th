@@ -104,7 +104,9 @@
         class="bg-[#FAFAF9] grid items-center grid-cols-2 medium:grid-cols-1 gap-7 pt-24 pl-[120px] large:pl-20 medium:pl-10 small:pl-5 pb-4 pr-4"
       >
         <div>
-          <h1 class="text-[65px] leading-[78px] text-dark_text mb-2">
+          <h1
+            class="text-[65px] megalarge:text-[50px] megalarge:leading-[1] large:text-4xl medium:text-2xl leading-[78px] text-dark_text mb-2"
+          >
             Daten mit höchster <br />
             Effizienz bearbeiten
           </h1>
@@ -122,14 +124,39 @@
             Kostenfreie Installation der Funkgeräte
           </p>
         </div>
-        <div
-          class="grid-cols-2 h-full large:hidden grid medium:hidden max-w-[689px] w-full gap-5"
-        >
+        <div class="grid-cols-2 h-full grid max-w-[689px] w-full gap-5">
+          <div class="relative mb-20">
+            <img src="./asset/hero_process_bg.png" alt="hero_process_bg" />
+            <img
+              class="absolute bottom-0 left-1/2 -translate-x-1/2"
+              src="./asset/hero_process_small.png"
+              alt="hero_process_small"
+            />
+          </div>
+          <div id="hero-process-animation" class="relative mt-20">
+            <script>
+              var animation = bodymovin.loadAnimation({
+                container: document.getElementById("hero-process-animation"),
+
+                path: "./animations/Animation_11.json",
+
+                renderer: "svg",
+
+                loop: true,
+
+                autoplay: true,
+
+                name: "Demo Animation",
+              });
+            </script>
+          </div>
         </div>
       </div>
-      <div class="px-[100px] py-8 flex items-center justify-start gap-16">
+      <div
+        class="px-[100px] py-8 flex items-center justify-start medium:hidden gap-16"
+      >
         <div
-          class="flex group items-center justify-start max-w-[345px] w-full small:flex-col rounded-[40px] py-2.5 px-4 medium:hidden gap-3"
+          class="flex group items-center justify-start max-w-[345px] w-full small:flex-col rounded-[40px] py-2.5 px-4 gap-3"
         >
           <span class="flex items-center w-full justify-start gap-2">
             <img
@@ -231,26 +258,236 @@
           </div>
         </div>
       </div>
-      <div class="p-[72px] large:p-6">
-        <div class="swiper numbered-swiper py-3.5 relative">
+      <!--      -->
+      <div
+        class="px-[100px] large:px-16 medium:px-10 small:px-5 my-16 small:my-8"
+      >
+        <div
+          class="bg-[#EFEEEC] w-fit mx-auto p-2.5 rounded-[15px] grid grid-cols-3 medium:grid-cols-1 gap-2.5"
+        >
+          <div class="flex flex-col gap-y-3.5 max-w-[385px]">
+            <div class="h-fit">
+              <img class="w-full" src="./asset/chart1.png" alt="chart" />
+            </div>
+            <div class="h-fit">
+              <img class="w-full" src="./asset/chart2.png" alt="chart" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-3.5 max-w-[385px]">
+            <div class="h-fit">
+              <img class="w-full" src="./asset/chart3.png" alt="chart" />
+            </div>
+            <div class="h-full">
+              <img class="w-full h-full" src="./asset/chart4.png" alt="chart" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-3.5 max-w-[385px]">
+            <div class="row-span-2 h-fit">
+              <img class="w-full" src="./asset/chart5.png" alt="chart" />
+            </div>
+            <div class="h-fit">
+              <img class="w-full" src="./asset/chart6.png" alt="chart" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--      -->
+      <div
+        class="px-[100px] large:px-16 medium:px-10 small:px-5 my-16 small:my-8"
+      >
+        <div
+          class="flex items-center justify-center gap-24 large:gap-16 medium:gap-10 small:gap-5 large:grid large:grid-cols-2 medium:grid-cols-1"
+        >
+          <div
+            class="flex items-center justify-start medium:justify-center gap-5 small:justify-start"
+          >
+            <img src="./asset/chess_shield.png" alt="chess_shield" />
+            <div>
+              <p class="text-dark_text text-[15px]">Gesetzeskonform</p>
+              <p class="text-dark_text/50 text-[15px]">§ 229 Artikel 3</p>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-start medium:justify-center gap-5 small:justify-start"
+          >
+            <img src="./asset/checkmark_shield.png" alt="checkmark_shield" />
+            <div>
+              <p class="text-dark_text text-[15px]">Datenschutzkonform</p>
+              <p class="text-dark_text/50 text-[15px]">Nach DSGVO</p>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-start medium:justify-center gap-5 small:justify-start"
+          >
+            <img src="./asset/lock.png" alt="lock" />
+            <div>
+              <p class="text-dark_text text-[15px]">SSL Verschlüsselung</p>
+              <p class="text-dark_text/50 text-[15px]">
+                Zertifiziert und Sicher
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-start medium:justify-center gap-5 small:justify-start"
+          >
+            <img src="./asset/eu_elipse.png" alt="eu_elipse" />
+            <div>
+              <p class="text-dark_text text-[15px]">Server in Europa</p>
+              <p class="text-dark_text/50 text-[15px]">EU Datenschutz</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--      animations section -->
+
+      <div
+        id="animations"
+        class="px-20 large:px-16 medium:px-10 small:px-5 my-16 small:my-8"
+      >
+        <div class="grid grid-cols-3 medium:grid-cols-1 gap-6">
+          <div class="space-y-6">
+            <div id="animation7" class="relative">
+              <script>
+                var animation = bodymovin.loadAnimation({
+                  container: document.getElementById("animation7"),
+
+                  path: "./animations/Animation_7.json",
+
+                  renderer: "svg",
+
+                  loop: true,
+
+                  autoplay: true,
+
+                  name: "Demo Animation",
+                });
+              </script>
+            </div>
+            <div>
+              <p class="text-dark_text font-bold text-[15px]">
+                Betreibeskostenabrechnung
+              </p>
+              <p class="line-clamp-3 text-dark_text text-[15px]">
+                Server in EuropaServer in EuropaServer in EuropaServer in
+                EuropaServer in EuropaServer in EuropaServer in EuropaServer in
+                Europa
+              </p>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div id="animation8" class="relative">
+              <script>
+                var animation = bodymovin.loadAnimation({
+                  container: document.getElementById("animation8"),
+
+                  path: "./animations/Animation_8.json",
+
+                  renderer: "svg",
+
+                  loop: true,
+
+                  autoplay: true,
+
+                  name: "Demo Animation",
+                });
+              </script>
+            </div>
+            <div>
+              <p class="text-dark_text font-bold text-[15px]">
+                Server in Europa
+              </p>
+              <p class="line-clamp-3 text-dark_text text-[15px]">
+                Server in EuropaServer in EuropaServer in EuropaServer in
+                EuropaServer in EuropaServer in EuropaServer in EuropaServer in
+                Europa
+              </p>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div id="animation9" class="relative">
+              <script>
+                var animation = bodymovin.loadAnimation({
+                  container: document.getElementById("animation9"),
+
+                  path: "./animations/Animation_9.json",
+
+                  renderer: "svg",
+
+                  loop: true,
+
+                  autoplay: true,
+
+                  name: "Demo Animation",
+                });
+              </script>
+            </div>
+            <div>
+              <p class="text-dark_text font-bold text-[15px]">
+                Server in Europa
+              </p>
+              <p class="line-clamp-3 text-dark_text text-[15px]">
+                Server in EuropaServer in EuropaServer in EuropaServer in
+                EuropaServer in EuropaServer in EuropaServer in EuropaServer in
+                Europa
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--      animations section -->
+
+      <div
+        class="px-20 space-y-12 large:px-16 medium:px-10 small:px-5 my-16 small:my-8"
+      >
+        <h5 class="max-w-2xl mx-auto text-center text-dark_text text-[30px]">
+          “Auf gesetzlich vorgeschrieben Zähler umstellen und Verbräuche digital
+          ablesen. Zähler umstellen und Verbräuche digital ablesen, umstellen
+          und Verbräuche digital ablesen.”
+        </h5>
+        <p class="text-center text-lg text-dark_text">
+          <b>Michael Günther</b> Leiter der IT Abteilung, Bonovia
+        </p>
+        <img class="block mx-auto" src="./asset/vonovia.png" alt="vonovia" />
+      </div>
+
+      <div
+        class="px-20 space-y-2.5 large:px-16 medium:px-10 small:px-5 my-16 small:my-8"
+      >
+        <h5
+          class="max-w-3xl mx-auto text-center text-dark_text text-[50px] leading-[60px] medium:text-[30px] medium:leading-9"
+        >
+          Alle Verbräuche einer Wohnung als Übersicht
+        </h5>
+        <p class="text-center mx-auto max-w-xl text-lg text-dark_text">
+          Etablierte Branchengrößen vertrauen den Systemen von Heidi und setzten
+          damit auf Innovation des 21. Jahrhunderts
+        </p>
+        <a
+          class="flex items-center justify-center w-fit !mb-12 mx-auto px-5 py-1 rounded-base bg-green text-dark_text text-lg"
+          href="#"
+          >Zugang sichern</a
+        >
+        <img class="mx-auto" src="./asset/score_chart.png" alt="score_chart" />
+      </div>
+
+      <div class="px-20 large:px-16 medium:px-10 small:px-5 my-16 small:my-8">
+        <div class="swiper chart-swiper relative">
           <div class="swiper-wrapper">
             <div
-              class="swiper-slide rounded-base flex items-center justify-start gap-9 large:flex-col"
+              data-slide-name="Dashboard"
+              class="swiper-slide rounded-base bg-[#EFEDEC] pl-[100px] large:pl-16 medium:pl-10 small:pl-5 flex items-center justify-between medium:flex-col pt-10 medium:pt-5"
             >
-              <img src="./asset/nunbered_counter.png" alt="numbered counter" />
-              <div class="max-w-[454px] space-y-6">
-                <p class="font-bold text-base text-green">
-                  Funkmelder Kaltwasser
-                </p>
-                <h4
-                  class="text-[45px] leading-[54px] medium:text-2xl text-dark_text"
+              <div class="max-w-xl">
+                <h5
+                  class="text-[45px] leading-[54px] mb-10 medium:text-2xl text-dark_text"
                 >
-                  Digitale Verbäuche <br />
-                  übermitteln
-                </h4>
-                <p>
-                  Akustische Leckageerkennung für Zählergrößen bis zu 10 m³/h.
-                  Zugelassen mit Dynamikbereich bis zu R1600
+                  Alles in einer Übersicht
+                </h5>
+                <p class="text-lg text-dark_text mb-6">
+                  Ein übersichtliches Dashboard fasst alle Verbräuche von
+                  Heizungsverbrauch, Kalt- und Warmwasser zusammen.
                 </p>
                 <a
                   class="group flex items-center justify-start gap-1.5 cursor-pointer"
@@ -262,24 +499,21 @@
                     alt="right_arrow"
                 /></a>
               </div>
+              <img src="./asset/swiper_chart.png" alt="swiper_chart" />
             </div>
             <div
-              class="swiper-slide rounded-base flex items-center justify-start gap-9 large:flex-col"
+              data-slide-name="Betriebskosten"
+              class="swiper-slide rounded-base bg-[#EFEDEC] pl-[100px] large:pl-16 medium:pl-10 small:pl-5 flex items-center justify-between medium:flex-col pt-10 medium:pt-5"
             >
-              <img src="./asset/nunbered_counter.png" alt="numbered counter" />
-              <div class="max-w-[454px] space-y-6">
-                <p class="font-bold text-base text-green">
-                  Funkmelder Kaltwasser
-                </p>
-                <h4
-                  class="text-[45px] leading-[54px] medium:text-2xl text-dark_text"
+              <div class="max-w-xl">
+                <h5
+                  class="text-[45px] leading-[54px] mb-10 medium:text-2xl text-dark_text"
                 >
-                  Digitale Verbäuche <br />
-                  übermitteln
-                </h4>
-                <p>
-                  Akustische Leckageerkennung für Zählergrößen bis zu 10 m³/h.
-                  Zugelassen mit Dynamikbereich bis zu R1600
+                  Alles in einer Übersicht
+                </h5>
+                <p class="text-lg text-dark_text mb-6">
+                  Ein übersichtliches Dashboard fasst alle Verbräuche von
+                  Heizungsverbrauch, Kalt- und Warmwasser zusammen.
                 </p>
                 <a
                   class="group flex items-center justify-start gap-1.5 cursor-pointer"
@@ -291,24 +525,21 @@
                     alt="right_arrow"
                 /></a>
               </div>
+              <img src="./asset/swiper_chart.png" alt="swiper_chart" />
             </div>
             <div
-              class="swiper-slide rounded-base flex items-center justify-start gap-9 large:flex-col"
+              data-slide-name="Rechnungen"
+              class="swiper-slide rounded-base bg-[#EFEDEC] pl-[100px] large:pl-16 medium:pl-10 small:pl-5 flex items-center justify-between medium:flex-col pt-10 medium:pt-5"
             >
-              <img src="./asset/nunbered_counter.png" alt="numbered counter" />
-              <div class="max-w-[454px] space-y-6">
-                <p class="font-bold text-base text-green">
-                  Funkmelder Kaltwasser
-                </p>
-                <h4
-                  class="text-[45px] leading-[54px] medium:text-2xl text-dark_text"
+              <div class="max-w-xl">
+                <h5
+                  class="text-[45px] leading-[54px] mb-10 medium:text-2xl text-dark_text"
                 >
-                  Digitale Verbäuche <br />
-                  übermitteln
-                </h4>
-                <p>
-                  Akustische Leckageerkennung für Zählergrößen bis zu 10 m³/h.
-                  Zugelassen mit Dynamikbereich bis zu R1600
+                  Alles in einer Übersicht
+                </h5>
+                <p class="text-lg text-dark_text mb-6">
+                  Ein übersichtliches Dashboard fasst alle Verbräuche von
+                  Heizungsverbrauch, Kalt- und Warmwasser zusammen.
                 </p>
                 <a
                   class="group flex items-center justify-start gap-1.5 cursor-pointer"
@@ -320,302 +551,18 @@
                     alt="right_arrow"
                 /></a>
               </div>
-            </div>
-            <div
-              class="swiper-slide rounded-base flex items-center justify-start gap-9 large:flex-col"
-            >
-              <img src="./asset/nunbered_counter.png" alt="numbered counter" />
-              <div class="max-w-[454px] space-y-6">
-                <p class="font-bold text-base text-green">
-                  Funkmelder Kaltwasser
-                </p>
-                <h4
-                  class="text-[45px] leading-[54px] medium:text-2xl text-dark_text"
-                >
-                  Digitale Verbäuche <br />
-                  übermitteln
-                </h4>
-                <p>
-                  Akustische Leckageerkennung für Zählergrößen bis zu 10 m³/h.
-                  Zugelassen mit Dynamikbereich bis zu R1600
-                </p>
-                <a
-                  class="group flex items-center justify-start gap-1.5 cursor-pointer"
-                  href="#"
-                  >Mehr erfahren
-                  <img
-                    class="group-hover:translate-x-1 transition colored-to-black -rotate-90"
-                    src="./asset/right_arrow.png"
-                    alt="right_arrow"
-                /></a>
-              </div>
+              <img src="./asset/swiper_chart.png" alt="swiper_chart" />
             </div>
           </div>
           <div class="swiper-controllers medium:hidden">
-            <div class="numbered-swiper-pagination swiper-pagination"></div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div>
-      <div
-        class="px-24 large:px-16 medium:px-10 small:px-5 mt-24 medium:my-8 mb-16 grid grid-cols-3 large:grid-cols-2 medium:grid-cols-1 gap-16"
-      >
-        <h3
-          class="large:col-span-2 large:text-center large:mb-12 small:mb-4 medium:col-span-1 text-[45px] leading-[54px] medium:text-2xl text-dark_text"
-        >
-          Eigenschaften
-        </h3>
-        <ul class="space-y-10">
-          <li class="flex items-center justify-start gap-5">
-            <span
-              class="size-[60px] rounded-full flex items-center justify-center shadow-lg"
-            >
-              <img
-                class="size-[30px]"
-                src="./asset/caract_vector.png"
-                alt="lines"
-              />
-            </span>
-            Akustische Leckageerkennung
-          </li>
-          <li class="flex items-center justify-start gap-5">
-            <span
-              class="size-[60px] rounded-full flex items-center justify-center shadow-lg"
-            >
-              <img
-                class="size-[30px]"
-                src="./asset/caract_radio.png"
-                alt="lines"
-              />
-            </span>
-            Fernablesung
-          </li>
-          <li class="flex items-center justify-start gap-5">
-            <span
-              class="size-[60px] rounded-full flex items-center justify-center shadow-lg"
-            >
-              <img
-                class="size-[30px]"
-                src="./asset/caract_vector.png"
-                alt="lines"
-              />
-            </span>
-            Echtzeit Messwerte
-          </li>
-          <li class="flex items-center justify-start gap-5">
-            <span
-              class="size-[60px] rounded-full flex items-center justify-center shadow-lg"
-            >
-              <img
-                class="size-[30px]"
-                src="./asset/caract_files.png"
-                alt="lines"
-              />
-            </span>
-            Akustische Leckageerkennung
-          </li>
-        </ul>
-        <ul class="space-y-10">
-          <li class="flex items-center justify-start gap-5">
-            <span
-              class="size-[60px] rounded-full flex items-center justify-center shadow-lg"
-            >
-              <img
-                class="size-[30px]"
-                src="./asset/caract_sniper.png"
-                alt="lines"
-              />
-            </span>
-            Genauigkeit
-          </li>
-          <li class="flex items-center justify-start gap-5">
-            <span
-              class="size-[60px] rounded-full flex items-center justify-center shadow-lg"
-            >
-              <img
-                class="size-[30px]"
-                src="./asset/caract_mind.png"
-                alt="lines"
-              />
-            </span>
-            Intelligente Warnungen
-          </li>
-          <li class="flex items-center justify-start gap-5">
-            <span
-              class="size-[60px] rounded-full flex items-center justify-center shadow-lg"
-            >
-              <img
-                class="size-[30px]"
-                src="./asset/caract_battery.png"
-                alt="lines"
-              />
-            </span>
-            Battery
-          </li>
-          <li class="flex items-center justify-start gap-5">
-            <span
-              class="size-[60px] rounded-full flex items-center justify-center shadow-lg"
-            >
-              <img
-                class="size-[30px]"
-                src="./asset/caract_mark.png"
-                alt="lines"
-              />
-            </span>
-            Genehmigungen
-          </li>
-        </ul>
-      </div>
-
-      <!--      chess section -->
-
-      <div class="pl-[100px] large:px-16 medium:px-10 small:px-5 pr-[60px]">
-        <div
-          class="flex justify-between py-16 border-t border-dark_green/10 items-center large:flex-col gap-8"
-        >
-          <div class="max-w-xl space-y-6">
-            <h4
-              class="text-[45px] leading-[54px] medium:text-2xl text-dark_text"
-            >
-              Daten in Echtzeit ablesen
-            </h4>
-            <p>
-              Rufen Sie alle relevanten Daten zu Warm- und Kaltwasser bequem von
-              zuhause ab. Zu jeder Zeit verfügbar.
-            </p>
-            <a
-              class="group flex items-center justify-start gap-1.5 cursor-pointer"
-              href="#"
-              >Mehr erfahren
-              <img
-                class="group-hover:translate-x-1 transition colored-to-black -rotate-90"
-                src="./asset/right_arrow.png"
-                alt="right_arrow"
-            /></a>
-          </div>
-          <img src="./asset/daten.png" alt="daten" />
-        </div>
-        <div
-          class="flex justify-between py-16 border-t border-dark_green/10 items-center large:flex-col gap-8"
-        >
-          <img src="./asset/payment.png" alt="payment" />
-          <div class="max-w-xl space-y-6">
-            <h4
-              class="text-[45px] leading-[54px] medium:text-2xl text-dark_text"
-            >
-              Zeit- & Geldersparnis
-            </h4>
-            <p>
-              Durch das Umrüsten auf digitale Funkzähler von Heidi sparen Sie
-              sich das Ablesen Vorort. Es ist keine Terminabsprache mit den
-              Mietern mehr notwendig.
-            </p>
-            <a
-              class="group flex items-center justify-start gap-1.5 cursor-pointer"
-              href="#"
-              >Kostenrechener
-              <img
-                class="group-hover:translate-x-1 transition colored-to-black -rotate-90"
-                src="./asset/right_arrow.png"
-                alt="right_arrow"
-            /></a>
-          </div>
-        </div>
-        <div
-          class="flex justify-between py-16 border-t border-dark_green/10 items-center large:flex-col gap-8"
-        >
-          <div class="max-w-xl space-y-6">
-            <h4
-              class="text-[45px] leading-[54px] medium:text-2xl text-dark_text"
-            >
-              Kostenfreie Installation
-            </h4>
-            <p>
-              Wir übernehmen die für Sie die Installation der Geräte vorort. Es
-              entstehen keine weitere Kosten für Sie.
-            </p>
-            <a
-              class="flex items-center justify-center transition hover:opacity-80 text-white text-center text-lg cursor-pointer py-5 px-[104px] w-fit rounded-1/2base bg-[#6083CC]"
-              href="#"
-              >Anfrage stellen</a
-            >
-          </div>
-          <img src="./asset/instalation.png" alt="instalation" />
-        </div>
-        <div
-          class="flex justify-between py-16 border-t border-dark_green/10 items-center large:flex-col gap-8"
-        >
-          <img src="./asset/box_brands.png" alt="box_brands" />
-          <div class="max-w-xl space-y-6">
-            <h4
-              class="text-[45px] leading-[54px] medium:text-2xl text-dark_text"
-            >
-              Das Vertrauen von Branchenexperten
-            </h4>
-            <p>
-              Etablierte Branchengrößen vertrauen den Systemen von Heidi und
-              setzten damit auf Innovation des 21. Jahrhunderts
-            </p>
-            <a
-              class="group flex items-center justify-start gap-1.5 cursor-pointer"
-              href="#"
-              >Mehr erfahren
-              <img
-                class="group-hover:translate-x-1 transition colored-to-black -rotate-90"
-                src="./asset/right_arrow.png"
-                alt="right_arrow"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <!--      chess section -->
-
-      <div
-        class="pl-[100px] large:px-16 medium:px-10 small:px-5 py-16 pr-[60px]"
-      >
-        <div
-          class="bg-[#EFEDEC] rounded-base grid grid-cols-2 gap-20 large:grid-cols-1 large:p-16 medium:p-10 small:p-5 px-[72px] pt-[92px] pb-[57px]"
-        >
-          <img src="./asset/paket_im.png" alt="paket" />
-          <div class="space-y-6">
-            <h4
-              class="text-[45px] leading-[54px] medium:text-2xl text-dark_text"
-            >
-              Alles in einem Paket
-            </h4>
-            <p>Wir übernehmen die Installation für Sie</p>
-            <ul class="space-y-4">
-              <li class="flex items-center justify-start gap-5">
-                <img src="./asset/checkmark_icon.png" alt="checkmark" />
-                Digitaler Warmwasserzähler
-              </li>
-              <li class="flex items-center justify-start gap-5">
-                <img src="./asset/checkmark_icon.png" alt="checkmark" />
-                Kaltwasserzähler
-              </li>
-              <li class="flex items-center justify-start gap-5">
-                <img src="./asset/checkmark_icon.png" alt="checkmark" />
-                Heizungsmengen Zähler
-              </li>
-              <li class="flex items-center justify-start gap-5">
-                <img src="./asset/checkmark_icon.png" alt="checkmark" />
-                Digitaler Stromzähler
-              </li>
-            </ul>
-            <a
-              class="flex items-center justify-center transition hover:opacity-80 text-white text-center text-lg cursor-pointer py-5 px-[104px] w-fit rounded-1/2base bg-green"
-              href="#"
-              >Jetzt installieren lassen</a
-            >
+            <div class="chart-swiper-pagination swiper-pagination"></div>
           </div>
         </div>
       </div>
 
       <div
         id="installFaq"
-        class="my-16 py-16 px-[100px] large:px-20 medium:px-10 small:px-5 large:gap-8 grid grid-cols-2 items-center large:grid-cols-1 bg-[#AEBBA5]"
+        class="my-16 small:my-8 py-16 px-[100px] large:px-20 medium:px-10 small:px-5 large:gap-8 grid grid-cols-2 items-center large:grid-cols-1 bg-[#AEBBA5]"
       >
         <div class="max-w-[480px] space-y-7">
           <h4 class="text-[45px] leading-[54px] medium:text-2xl text-dark_text">
@@ -1099,112 +1046,75 @@
       </div>
       <!--      FAQ -->
 
-      <!--      bottom slider -->
-
-      <div class="p-[72px] large:p-6">
-        <h3
-          class="mb-14 text-[45px] text-center leading-[54px] medium:text-2xl text-dark_text"
+      <div class="px-20 large:px-16 medium:px-10 small:px-5 my-16 small:my-8">
+        <h5
+          class="text-[45px] text-center leading-[54px] mb-9 medium:text-2xl text-dark_text"
         >
-          Geräteangebot
-        </h3>
+          Kostenfrei Nachrüsten
+        </h5>
+        <a
+          class="flex items-center justify-center transition hover:opacity-80 text-white text-center text-lg cursor-pointer py-5 px-[104px] mx-auto w-fit mb-5 rounded-1/2base bg-green"
+          href="#"
+          >Jetzt installieren lassen</a
+        >
+        <p class="text-center text-dark_text text-[15px]">
+          Kostenfreie Installation der Funkgeräte
+        </p>
         <div
-          class="swiper counters-swiper px-20 medium:px-8 medium:mx-0 mx-10 pb-10 relative"
+          class="flex mb-28 mt-16 items-center justify-center gap-24 large:gap-16 medium:gap-10 small:gap-5 large:grid large:grid-cols-2 medium:grid-cols-1"
         >
-          <div class="swiper-wrapper pt-[150px] medium:pt-[75px]">
-            <div class="swiper-slide max-w-[300px] max-h-[190px] relative">
-              <img
-                class="w-full h-[190px] object-contain"
-                src="./asset/slider_counter1.png"
-                alt="swiper image"
-              />
-              <span class="absolute block -bottom-10 w-full text-center">
-                Kaltwasser Zähler
-              </span>
-            </div>
-            <div class="swiper-slide max-w-[300px] max-h-[190px] relative">
-              <img
-                class="w-full h-[190px] object-contain"
-                src="./asset/swiper_counter2.png"
-                alt="swiper image"
-              />
-              <span class="absolute block -bottom-10 w-full text-center">
-                Gas Zähler
-              </span>
-            </div>
-            <div class="swiper-slide max-w-[300px] max-h-[190px] relative">
-              <img
-                class="w-full h-[190px] object-contain"
-                src="./asset/swiper_counter3.png"
-                alt="swiper image"
-              />
-              <span class="absolute block -bottom-10 w-full text-center">
-                Warmwasser Zähler
-              </span>
-            </div>
-            <div class="swiper-slide max-w-[300px] max-h-[190px] relative">
-              <img
-                class="w-full h-[190px] object-contain"
-                src="./asset/slider_counter1.png"
-                alt="swiper image"
-              />
-              <span class="absolute block -bottom-10 w-full text-center">
-                Kaltwasser Zähler
-              </span>
-            </div>
-            <div class="swiper-slide max-w-[300px] max-h-[190px] relative">
-              <img
-                class="w-full h-[190px] object-contain"
-                src="./asset/swiper_counter2.png"
-                alt="swiper image"
-              />
-              <span class="absolute block -bottom-10 w-full text-center">
-                Gas Zähler
-              </span>
-            </div>
-            <div class="swiper-slide max-w-[300px] max-h-[190px] relative">
-              <img
-                class="w-full h-[190px] object-contain"
-                src="./asset/swiper_counter3.png"
-                alt="swiper image"
-              />
-              <span class="absolute block -bottom-10 w-full text-center">
-                Warmwasser Zähler
-              </span>
+          <div
+            class="flex items-center justify-start medium:justify-center gap-5 small:justify-start"
+          >
+            <img src="./asset/chess_shield.png" alt="chess_shield" />
+            <div>
+              <p class="text-dark_text text-[15px]">Gesetzeskonform</p>
+              <p class="text-dark_text/50 text-[15px]">§ 229 Artikel 3</p>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div>
-
-      <!--      bottom slider -->
-      <div class="py-14 small:px-4">
-        <h2
-          class="text-center max-w-4xl mx-auto text-[30px] leading-9 mb-5 text-dark_text relative"
-        >
-          Zeit ist Geld. Sparen Sie beides.
-        </h2>
-        <div class="relative w-fit mb-4 mx-auto medium:w-full">
-          <label class="sr-only" for="contact_email">Los gehts</label>
-          <input
-            class="py-5 px-7 min-w-[500px] small:min-w-fit border border-border_base rounded-1/2base placeholder:text-dark_text/50 text-dark_text text-xl placeholder:text-xl medium:w-full medium:text-center placeholder:leading-6 leading-6"
-            placeholder="Wie lautet Ihre email?"
-            type="email"
-            name="contact_email"
-            id="contact_email"
-          />
-          <button
-            class="absolute medium:relative medium:right-0 medium:w-full py-4 px-8 whitespace-nowrap text-xl leading-6 bg-green rounded-1/2base flex duration-300 hover:opacity-80 items-center justify-center top-1.5 right-1.5 text-dark_text"
-            type="button"
+          <div
+            class="flex items-center justify-start medium:justify-center gap-5 small:justify-start"
           >
-            Los gehts
-          </button>
+            <img src="./asset/checkmark_shield.png" alt="checkmark_shield" />
+            <div>
+              <p class="text-dark_text text-[15px]">Datenschutzkonform</p>
+              <p class="text-dark_text/50 text-[15px]">Nach DSGVO</p>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-start medium:justify-center gap-5 small:justify-start"
+          >
+            <img src="./asset/lock.png" alt="lock" />
+            <div>
+              <p class="text-dark_text text-[15px]">SSL Verschlüsselung</p>
+              <p class="text-dark_text/50 text-[15px]">
+                Zertifiziert und Sicher
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-start medium:justify-center gap-5 small:justify-start"
+          >
+            <img src="./asset/eu_elipse.png" alt="eu_elipse" />
+            <div>
+              <p class="text-dark_text text-[15px]">Server in Europa</p>
+              <p class="text-dark_text/50 text-[15px]">EU Datenschutz</p>
+            </div>
+          </div>
         </div>
-        <p
-          class="text-center mx-auto text-sm leading-4 mb-5 text-dark_text relative"
+        <div
+          class="flex items-center justify-between px-9 small:px-5 megalarge:flex-col megalarge:space-y-6 py-7 border border-dark_green/10 rounded-base"
         >
-          Keine persönlichen Informationen werden gespeichert
-        </p>
+          <img src="./asset/small_counter.png" alt="small_counter" />
+          <p class="text-[30px] medium:text-center text-dark_text">
+            Jetzt auf digitale Funkzähler umstellen lassen.
+          </p>
+          <a
+            class="flex items-center justify-center transition hover:opacity-80 text-white text-center text-lg cursor-pointer py-4 px-5 w-fit rounded-base bg-green"
+            href="#"
+            >Angebot anfordern</a
+          >
+        </div>
       </div>
     </main>
     <footer
