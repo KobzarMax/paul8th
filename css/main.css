@@ -674,6 +674,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -744,6 +748,10 @@ video {
 
 .max-h-\[190px\] {
   max-height: 190px;
+}
+
+.min-h-\[611px\] {
+  min-height: 611px;
 }
 
 .w-\[200px\] {
@@ -1110,6 +1118,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#EFEDECh\] {
+  background-color: #EFEDECh;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -1316,6 +1328,10 @@ video {
 
 .pt-\[92px\] {
   padding-top: 92px;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .text-center {
@@ -1595,8 +1611,9 @@ html {
   opacity: 100%;
 }
 
-.news-swiper-pagination .swiper-pagination-bullet, .functions-swiper-pagination .swiper-pagination-bullet {
-  background-color: #1E322D;
+.news-swiper-pagination .swiper-pagination-bullet,
+.functions-swiper-pagination .swiper-pagination-bullet {
+  background-color: #1e322d;
 }
 
 .news-swiper-pagination {
@@ -1634,13 +1651,13 @@ html {
 }
 
 .numberedTitle:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -20px;
   left: 10%;
   width: 80%;
   height: 1px;
-  background-color: #1E322D;
+  background-color: #1e322d;
   opacity: 0.1;
 }
 
@@ -1650,10 +1667,10 @@ html {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, max-content);
     grid-template-areas:
-            "hero3"
-            "heroTitle"
-            "hero1"
-            "hero2";
+      "hero3"
+      "heroTitle"
+      "hero1"
+      "hero2";
   }
 
   .hero-1 {
@@ -1685,7 +1702,10 @@ html {
   }
 }
 
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next, .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev, .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next, .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next,
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev,
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next,
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
   transform: scale(1) !important;
 }
 
@@ -1700,7 +1720,7 @@ html {
 }
 
 .faq-answer-header {
-  color: #1E322D;
+  color: #1e322d;
   padding: 16px 0;
   font-size: 18px;
   line-height: 21.6px;
@@ -1731,7 +1751,7 @@ html {
 
 .faq-answer-content p {
   line-height: 24px;
-  color: #1E322D;
+  color: #1e322d;
   font-size: 16px;
   padding: 16px 0;
 }
@@ -1747,7 +1767,7 @@ html {
   transition: transform 0.3s ease;
   width: 35px;
   min-width: 35px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   border: 1px solid rgba(30, 50, 45, 0.2);
   height: 37px;
   display: flex;
@@ -1760,7 +1780,8 @@ html {
   width: 10px;
   height: 10px;
   transition: 0.3s all ease;
-  filter: invert(14%) sepia(18%) saturate(894%) hue-rotate(114deg) brightness(97%) contrast(89%);
+  filter: invert(14%) sepia(18%) saturate(894%) hue-rotate(114deg)
+    brightness(97%) contrast(89%);
   opacity: 0.5;
 }
 
@@ -1797,7 +1818,7 @@ html {
   height: 80px;
   border-radius: 9999px;
   color: #ffffff;
-  background-color: #D9D9D980;
+  background-color: #d9d9d980;
 }
 
 .swiper-button-next {
@@ -1809,16 +1830,18 @@ html {
   height: 80px;
   border-radius: 9999px;
   color: #ffffff;
-  background-color: #D9D9D980;
+  background-color: #d9d9d980;
 }
 
 @media (max-width: 640px) {
-  .swiper-button-next, .swiper-button-prev {
+  .swiper-button-next,
+  .swiper-button-prev {
     width: 40px;
     height: 40px;
   }
 
-  .swiper-button-prev:after, .swiper-button-next:after {
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
     font-size: 16px;
     font-weight: 700;
   }
@@ -1832,7 +1855,8 @@ html {
   right: 25px !important;
 }
 
-.swiper-button-prev:after, .swiper-button-next:after {
+.swiper-button-prev:after,
+.swiper-button-next:after {
   font-size: 30px;
   font-weight: 700;
 }
@@ -1841,7 +1865,7 @@ html {
   position: absolute;
   width: 95%;
   height: calc(100% - 40px);
-  content: '';
+  content: "";
   background-color: rgba(239, 237, 236, 0.5);
   opacity: 0.5;
   top: 0;
@@ -1854,7 +1878,7 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
-  content: '';
+  content: "";
   background-color: rgba(239, 237, 236, 0.5);
   opacity: 0.5;
   top: 0;
@@ -1863,7 +1887,8 @@ html {
 }
 
 .colored-to-black {
-  filter: invert(100%) sepia(18%) saturate(910%) hue-rotate(114deg) brightness(87%) contrast(89%);
+  filter: invert(100%) sepia(18%) saturate(910%) hue-rotate(114deg)
+    brightness(87%) contrast(89%);
 }
 
 .numbered-swiper .swiper-pagination {
@@ -1901,17 +1926,13 @@ html {
 }
 
 #installFaq li.active span {
-  background-color: #1E322D;
+  background-color: #1e322d;
   color: #ffffff;
 }
 
 .reviews-swiper .swiper-slide-active img {
   width: 250px;
   height: 416px;
-}
-
-.hero-process {
-  background-image: url("../asset/hero_process_bg.png");
 }
 
 .placeholder\:text-xl::-moz-placeholder {
