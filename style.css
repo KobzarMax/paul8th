@@ -460,6 +460,9 @@ html {
   width: 250px;
   height: 416px;
 }
+.reviews-swiper .swiper-slide {
+  max-width: max-content !important;
+}
 .animation-container svg {
   position: absolute;
   height: fit-content !important;
