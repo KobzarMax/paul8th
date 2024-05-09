@@ -456,9 +456,11 @@ html {
   color: #ffffff;
 }
 
-.reviews-swiper .swiper-slide-active video {
-  width: 250px;
-  height: 416px;
+@media (min-width: 769px) {
+  .reviews-swiper .swiper-slide-active video {
+    width: 250px;
+    height: 416px;
+  }
 }
 .reviews-swiper .swiper-slide {
   max-width: max-content !important;
@@ -496,4 +498,11 @@ html {
   background-color: #5b5a57;
   border-radius: 40px;
   padding: 11px 17px;
+}
+
+.golden-star {
+  filter: invert(85%) sepia(25%) saturate(6899%) hue-rotate(333deg)
+    brightness(93%) contrast(88%);
+  width: 17px;
+  height: 17px;
 }
