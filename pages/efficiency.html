@@ -136,17 +136,17 @@
           <div id="hero-process-animation" class="relative mt-20">
             <script>
               var animation = bodymovin.loadAnimation({
-                container: document.getElementById("hero-process-animation"),
+                container: document.getElementById('hero-process-animation'),
 
-                path: "./animations/Animation_11.json",
+                path: './animations/Animation_11.json',
 
-                renderer: "svg",
+                renderer: 'svg',
 
                 loop: true,
 
                 autoplay: true,
 
-                name: "Demo Animation",
+                name: 'Demo Animation'
               });
             </script>
           </div>
@@ -278,7 +278,11 @@
               <img class="w-full" src="../asset/chart3.png" alt="chart" />
             </div>
             <div class="h-full">
-              <img class="w-full h-full" src="../asset/chart4.png" alt="chart" />
+              <img
+                class="w-full h-full"
+                src="../asset/chart4.png"
+                alt="chart"
+              />
             </div>
           </div>
           <div class="flex flex-col gap-y-3.5 max-w-[385px]">
@@ -350,17 +354,17 @@
             <div id="animation7" class="relative">
               <script>
                 var animation = bodymovin.loadAnimation({
-                  container: document.getElementById("animation7"),
+                  container: document.getElementById('animation7'),
 
-                  path: "./animations/Animation_7.json",
+                  path: './animations/Animation_7.json',
 
-                  renderer: "svg",
+                  renderer: 'svg',
 
                   loop: true,
 
                   autoplay: true,
 
-                  name: "Demo Animation",
+                  name: 'Demo Animation'
                 });
               </script>
             </div>
@@ -379,17 +383,17 @@
             <div id="animation8" class="relative">
               <script>
                 var animation = bodymovin.loadAnimation({
-                  container: document.getElementById("animation8"),
+                  container: document.getElementById('animation8'),
 
-                  path: "./animations/Animation_8.json",
+                  path: './animations/Animation_8.json',
 
-                  renderer: "svg",
+                  renderer: 'svg',
 
                   loop: true,
 
                   autoplay: true,
 
-                  name: "Demo Animation",
+                  name: 'Demo Animation'
                 });
               </script>
             </div>
@@ -408,17 +412,17 @@
             <div id="animation9" class="relative">
               <script>
                 var animation = bodymovin.loadAnimation({
-                  container: document.getElementById("animation9"),
+                  container: document.getElementById('animation9'),
 
-                  path: "./animations/Animation_9.json",
+                  path: './animations/Animation_9.json',
 
-                  renderer: "svg",
+                  renderer: 'svg',
 
                   loop: true,
 
                   autoplay: true,
 
-                  name: "Demo Animation",
+                  name: 'Demo Animation'
                 });
               </script>
             </div>
@@ -665,8 +669,9 @@
         </div>
       </div>
 
+      <!-- reviews swiper -->
       <div
-        class="py-16 pl-36 large:pl-30 medium:pl-16 small:pl-3 medium:flex-col medium:gap-8 flex items-center justify-start gap-[72px]"
+        class="py-16 pl-36 large:pl-30 medium:pl-16 small:pl-5 medium:flex-col medium:gap-8 flex items-center justify-start gap-[72px]"
       >
         <div class="max-w-[436px] space-y-6">
           <h4 class="text-[45px] leading-[54px] medium:text-2xl text-dark_text">
@@ -677,7 +682,7 @@
             Menschen, die das am besten beurteilen können: unsere Abonnenten.
             Was sie überzeugt hat.
           </p>
-          <img src="../asset/trustpilot.png" alt="trustpilot" />
+          <img src="./asset/trustpilot.png" alt="trustpilot" />
           <a
             class="text-lg block w-fit text-dark_text py-2.5 px-5 border border-dark_green/20 rounded-full"
             href="#"
@@ -699,11 +704,12 @@
                   <p class="text-xl text-white">von SV1 Real Estate</p>
                 </div>
               </div>
-              <img
-                class="-mt-20 duration-300 w-[200px] h-[336px] rounded-[40px]"
-                src="../asset/video_preview.png"
-                alt="video_preview"
-              />
+              <video
+                class="-mt-20 duration-300 object-cover aspect-video cursor-pointer w-[200px] h-[336px] rounded-[40px]"
+                loop
+              >
+                <source src="./asset/video-placeholder.mp4" type="video/mp4" />
+              </video>
             </div>
             <div
               class="swiper-slide max-w-[680px] flex items-stretch justify-between gap-3 rounded-[30px] bg-dark_green px-10 pt-8 pb-6"
@@ -718,11 +724,12 @@
                   <p class="text-xl text-white">von SV1 Real Estate</p>
                 </div>
               </div>
-              <img
-                class="-mt-20 duration-300 w-[200px] h-[336px] rounded-[40px]"
-                src="../asset/video_preview.png"
-                alt="video_preview"
-              />
+              <video
+                class="-mt-20 duration-300 object-cover aspect-video cursor-pointer w-[200px] h-[336px] rounded-[40px]"
+                loop
+              >
+                <source src="./asset/video-placeholder.mp4" type="video/mp4" />
+              </video>
             </div>
             <div
               class="swiper-slide max-w-[680px] flex items-stretch justify-between gap-3 rounded-[30px] bg-dark_green px-10 pt-8 pb-6"
@@ -737,11 +744,12 @@
                   <p class="text-xl text-white">von SV1 Real Estate</p>
                 </div>
               </div>
-              <img
-                class="-mt-20 duration-300 w-[200px] h-[336px] rounded-[40px]"
-                src="../asset/video_preview.png"
-                alt="video_preview"
-              />
+              <video
+                class="-mt-20 duration-300 object-cover aspect-video cursor-pointer w-[200px] h-[336px] rounded-[40px]"
+                loop
+              >
+                <source src="./asset/video-placeholder.mp4" type="video/mp4" />
+              </video>
             </div>
             <div
               class="swiper-slide max-w-[680px] flex items-stretch justify-between gap-3 rounded-[30px] bg-dark_green px-10 pt-8 pb-6"
@@ -756,17 +764,19 @@
                   <p class="text-xl text-white">von SV1 Real Estate</p>
                 </div>
               </div>
-              <img
-                class="-mt-20 duration-300 w-[200px] h-[336px] rounded-[40px]"
-                src="../asset/video_preview.png"
-                alt="video_preview"
-              />
+              <video
+                class="-mt-20 duration-300 relative object-cover aspect-video cursor-pointer w-[200px] h-[336px] rounded-[40px]"
+                loop
+              >
+                <source src="./asset/video-placeholder.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
       </div>
+      <!-- reviews swiper -->
 
       <!--      FAQ -->
       <div
